@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LESOTHO TOURISM</title>
+<link rel="stylesheet" href="lenkoane.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+<header>
+<nav>
+<a href="index.html"><i>Explore Lesotho<br>The Mountain Kingdom</i></a>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html" aria-current="page">Services/Products</a>
+<a href="gallery.html">Gallery</a>
+<a href="contacts.html">Contacts/Booking Form</a>
+</nav>
+</header>
+
+<div class="hero text-center">
+<div class="container">
+<h1 class="fw-bold display-5">Explore Lesotho Services</h1>
+<p class="lead">Destinations • Activities • Accommodation - All in One Place</p>
+<div class="row justify-content-center mt-4">
+<div class="col-md-6">
+<div class="input-group">
+<span class="input-group-text"><i class="bi bi-search"></i></span>
+<input type="search" id="searchInput" class="form-control" placeholder="Search destination, e.g. Katse, Sani, pony..." aria-label="Search destinations">
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="container py-5">
+<div class="text-center mb-4">
+<button type="button" class="btn btn-dark btn-sm m-1 filter-btn active" data-filter="all">All</button>
+<button type="button" class="btn btn-outline-dark btn-sm m-1 filter-btn" data-filter="mountain">Mountains</button>
+<button type="button" class="btn btn-outline-dark btn-sm m-1 filter-btn" data-filter="adventure">Adventure</button>
+<button type="button" class="btn btn-outline-dark btn-sm m-1 filter-btn" data-filter="water">Water</button>
+</div>
+
+<h2 class="section-title mb-4"><i class="bi bi-geo-alt"></i> 1. Top Destinations</h2>
+<div class="row g-4" id="destinationsRow">
+
+<div class="col-md-4 destination-card" data-category="mountain water" data-name="katse dam">
+<div class="card">
+<img src="katse.jpg" class="img-cover" alt="Katse Dam surrounded by Lesotho mountains">
+<div class="p-3">
+<span class="badge bg-primary">Water</span> <span class="badge bg-secondary">Water</span>
+<h5 class="mt-2">Katse Dam</h5>
+<p class="text-muted small">Africa's highest dam, 185m deep. Boat cruise, fishing, engineering tour.</p>
+<p><span class="price-tag">M1000 tour</span></p>
+<button class="btn btn-outline-primary btn-sm w-100 add-activity" data-name="Katse Dam Tour" data-price="700">Add to Trip</button>
+</div>
+</div>
+</div>
+
+<div class="col-md-4 destination-card" data-category="adventure water" data-name="maletsunyane falls">
+<div class="card">
+<img src="maletsunyane.jpg" class="img-cover" alt="Maletsunyane Falls">
+<div class="p-3">
+<span class="badge bg-danger">Adventure</span> <span class="badge bg-info">Water</span>
+<h5 class="mt-2">Maletsunyane Falls</h5>
+<p class="text-muted small">196m single drop, highest in Southern Africa. Abseil 204m - world record!</p>
+<p><span class="price-tag">M1200 abseil</span></p>
+<button class="btn btn-outline-primary btn-sm w-100 add-activity" data-name="Maletsunyane Abseil" data-price="1200">Add to Trip</button>
+</div>
+</div>
+</div>
+
+<div class="col-md-4 destination-card" data-category="cultural mountain" data-name="thaba bosiu">
+<div class="card">
+<img src="thababosiu.jpg" class="img-cover" alt="Thaba Bosiu mountain fortress">
+<div class="p-3">
+<span class="badge bg-warning text-dark">Cultural</span>
+<h5 class="mt-2">Thaba Bosiu</h5>
+<p class="text-muted small">Fortress of King Moshoeshoe I. Basotho history, museum, village tour.</p>
+<p><span class="price-tag">M600 tour</span></p>
+<button class="btn btn-outline-primary btn-sm w-100 add-activity" data-name="Thaba Bosiu Cultural" data-price="600">Add to Trip</button>
+</div>
+</div>
+</div>
+
+<div class="col-md-4 destination-card" data-category="mountain adventure" data-name="sani pass">
+<div class="card">
+<img src="sani.jpg" class="img-cover" alt="Mountain road on Sani Pass">
+<div class="p-3">
+<span class="badge bg-dark">Mountain</span> <span class="badge bg-success">Adventure</span>
+<h5 class="mt-2">Sani Pass</h5>
+<p class="text-muted small">The pass to SA. Highest pub in Africa at 2874m, snow in winter.</p>
+<p><span class="price-tag">M850 4x4 tour</span></p>
+<button class="btn btn-outline-primary btn-sm w-100 add-activity" data-name="Sani Pass 4x4" data-price="850">Add to Trip</button>
+</div>
+</div>
+</div>
+
+<div class="col-md-4 destination-card" data-category="adventure" data-name="sehlabathebe national park">
+<div class="card">
+<img src="sehlabathebe.jpg" class="img-cover" alt="Rock formations in Sehlabathebe National Park">
+<div class="p-3">
+<span class="badge bg-success">UNESCO</span> <span class="badge bg-dark">Adventure</span>
+<h5 class="mt-2">Sehlabathebe Park</h5>
+<p class="text-muted small">UNESCO World Heritage, 60+ rock art sites, rare birds, wilderness.</p>
+<p><span class="price-tag">M1500 2-days</span></p>
+<button class="btn btn-outline-primary btn-sm w-100 add-activity" data-name="Sehlabathebe Park" data-price="1500">Add to Trip</button>
+</div>
+</div>
+</div>
+
+<div class="col-md-4 destination-card" data-category="mountain" data-name="maluti mountains">
+<div class="card">
+<img src="maluti.jpg" class="img-cover" alt="Maluti Mountains">
+<div class="p-3">
+<span class="badge bg-secondary">Mountain</span>
+<h5 class="mt-2">Maluti Mountains</h5>
+<p class="text-muted small">Hiking paradise, pony trekking base, Thabana Ntlenyana 3482m peak.</p>
+<p><span class="price-tag">M450 pony trek</span></p>
+<button class="btn btn-outline-primary btn-sm w-100 add-activity" data-name="Maluti Hiking" data-price="450">Add to Trip</button>
+</div>
+</div>
+</div>
+
+</div>
+
+
+<h2 class="section-title mt-5 mb-4"><i class="bi bi-activity"></i> 2. Activities - Build Your Trip</h2>
+<div class="row g-4">
+<div class="col-lg-8">
+<div class="card p-4">
+<div class="row">
+<div class="col-md-6">
+<h6><input type="checkbox" class="activity-check" data-name="Pony Trek 2hrs" data-price="300"> Pony Trek (2hrs) - M300</h6>
+<h6><input type="checkbox" class="activity-check" data-name="Pony Trek Full Day" data-price="700"> Pony Trek Full Day - M700</h6>
+<h6><input type="checkbox" class="activity-check" data-name="Ski at AfriSki" data-price="800"> Ski at AfriSki - M800/day</h6>
+<h6><input type="checkbox" class="activity-check" data-name="Paragliding" data-price="1800"> Paragliding - M1800</h6>
+</div>
+<div class="col-md-6">
+<h6><input type="checkbox" class="activity-check" data-name="Trout Fishing" data-price="300"> Trout Fishing - M300</h6>
+<h6><input type="checkbox" class="activity-check" data-name="Cultural Dance" data-price="150"> Cultural Dance + Food - M150</h6>
+<h6><input type="checkbox" class="activity-check" data-name="Rock Art Tour" data-price="350"> Rock Art Tour - M350</h6>
+<h6><input type="checkbox" class="activity-check" data-name="Photography Guide" data-price="500"> Photography Guide - M500</h6>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="card p-4 mt-4" aria-live="polite">
+<h3>Your Trip Estimate</h3>
+<p id="trip-empty">Choose destinations or activities above to build your trip.</p>
+<ul id="trip-items" class="mb-3"></ul>
+<p class="fw-bold mb-3">Selected activities: M<span id="trip-total">0</span></p>
+<a href="contacts.html" class="btn btn-primary">Continue to Booking</a>
+</div>
+<h2 class="section-title mt-5 mb-4"><i class="bi bi-houses"></i> 3. Accommodation - Price Calculator</h2>
+<div class="row g-4">
+<div class="col-md-8">
+<div class="card p-4">
+<div class="row g-3">
+<div class="col-md-6">
+<label>Accommodation Type</label>
+<select id="accType" class="form-select">
+<option value="250">Village Homestay - M250/night</option>
+<option value="450">Mountain Lodge - M450/night</option>
+<option value="650">Hotel Maseru - M650/night</option>
+<option value="1200">AfriSki Chalet - M1200/night</option>
+<option value="150">Camping - M150/night</option>
+</select>
+</div>
+<div class="col-md-3">
+<label>Nights</label>
+<input type="number" id="nights" class="form-control" value="2" min="1" max="14">
+</div>
+<div class="col-md-3">
+<label>Guests</label>
+<input type="number" id="guests" class="form-control" value="2" min="1" max="10">
+</div>
+<div class="col-12">
+<div class="form-check">
+<input class="form-check-input" type="checkbox" id="breakfast" value="80">
+<label class="form-check-label">Add Breakfast + M80 per person/night</label>
+</div>
+<div class="form-check">
+<input class="form-check-input" type="checkbox" id="guide" value="300">
+<label class="form-check-label">Add Local Guide + M300 per day</label>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card p-4 text-center bg-primary text-white">
+<h5>Accommodation Total</h5>
+<h2>M<span id="accTotal">500</span></h2>
+<p class="small" id="accBreakdown">2 nights x M250 = M500</p>
+<img src="maliba.jpg" class="img-cover rounded mt-2" alt="Scenery along Sani Pass" style="height:120px">
+</div>
+</div>
+</div>
+
+</div>
+
+<footer>
+<p class="mb-1">© 2026 Explore Lesotho</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
